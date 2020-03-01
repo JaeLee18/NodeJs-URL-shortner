@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>URL Shrinker</h1>
+        <form action="/shortUrls" method="POST" class="my-4 form-inline">
+            <label for="fullUrl" class="sr-only">Url</label>
+            <input required placeholder="Url" 
+            type="url" name="fullUrl" 
+            id="fullUrl"
+            class="form-contorl col mr-2"></input>
+            <button type="submit" class="btn btn-success">Shrink</button>
+        </form>
+    
+        <table class="table table-striped table-responsive">
+            <thead>
+                <tr>
+                    <th>Full URL</th>
+                    <th>Short URL</th>
+                    <th>Clicks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://courses.webdevsimplified.com">https://courses.webdevsimplified.com</a></td>
+                    <td><a hred="/123">123</a></td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
